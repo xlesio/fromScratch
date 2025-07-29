@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}TenisLiga MVP{% endblock %}</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <!-- Możesz tu dodać np. Bootstrapa jeśli chcesz -->
+</head>
+<body>
+    <header>
+        <h1>TenisLiga MVP</h1>
+        <!-- Możesz dodać pasek nawigacji -->
+    </header>
+    <main>
+        {% block content %}
+        <!-- Treść konkretnej podstrony -->
+        {% endblock %}
+    </main>
+</body>
+</html>
