@@ -3,9 +3,165 @@
 {% block title %}TenisLiga MVP - Strona główna{% endblock %}
 
 {% block content %}
-<!-- Wstaw tu wszystko co miałeś w index_bootstrap.html,
-     ALE bez <html>, <head>, <body>! Tylko “środek”. -->
-<div class="container">
-    <!-- Twój ranking, wyzwania, mecze itd. -->
+<div class="row g-4">
+  <!-- Lewa kolumna 60% -->
+  <div class="col-lg-7">
+    <h2 class="h4">Ranking</h2>
+    <table class="table table-hover table-sm mb-4">
+      <thead>
+        <tr>
+          <th class="text-center" style="width:4%;">#</th>
+          <th style="width:22%;">Zawodnik</th>
+          <th style="width:8%;">Wiek</th>
+          <th style="width:10%;">Mecze</th>
+          <th style="width:10%;">Pkt</th>
+          <th style="width:5%;">+/-</th>
+          <th style="width:21%;">Drużyna</th>
+          <th style="width:12%;">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center">1</td>
+          <td>Jan Kowalski</td>
+          <td>34</td>
+          <td>15</td>
+          <td>1200</td>
+          <td><span class="arrow-up">&#8593;</span></td>
+          <td>SuperSerwisy</td>
+          <td><button class="btn btn-outline-primary btn-wyzwij btn-sm">Wyzwij</button></td>
+        </tr>
+        <tr>
+          <td class="text-center">2</td>
+          <td>Adam Nowak</td>
+          <td>29</td>
+          <td>13</td>
+          <td>1100</td>
+          <td><span class="arrow-down">&#8595;</span></td>
+          <td>SuperSerwisy</td>
+          <td><button class="btn btn-outline-primary btn-wyzwij btn-sm">Wyzwij</button></td>
+        </tr>
+        <tr>
+          <td class="text-center">3</td>
+          <td>Anna Nowak</td>
+          <td>27</td>
+          <td>11</td>
+          <td>950</td>
+          <td><span class="arrow-right">&#8594;</span></td>
+          <td>MixTeam</td>
+          <td><button class="btn btn-outline-primary btn-wyzwij btn-sm">Wyzwij</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 class="h4">Drużyny</h2>
+    <table class="table table-sm mb-3">
+      <thead>
+        <tr>
+          <th style="width:30%;">Nazwa drużyny</th>
+          <th>Skład</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SuperSerwisy</td>
+          <td>Jan Kowalski, Adam Nowak</td>
+        </tr>
+        <tr>
+          <td>MixTeam</td>
+          <td>Anna Nowak, Katarzyna Malec</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Prawa kolumna 40% -->
+  <div class="col-lg-5">
+    <h2 class="h4">Aktualne wyzwania</h2>
+    <table class="table table-sm mb-4">
+      <thead>
+        <tr>
+          <th style="width:18%;">Wyz.</th>
+          <th style="width:18%;">Na kogo</th>
+          <th style="width:18%;">Typ</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jan Kowalski</td>
+          <td>Adam Nowak</td>
+          <td>Singiel</td>
+          <td class="text-success">Zaakceptowane</td>
+        </tr>
+        <tr>
+          <td>Anna Nowak</td>
+          <td>MixTeam</td>
+          <td>Mikst</td>
+          <td class="text-warning">Oczekuje</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 class="h4">Ostatnie mecze</h2>
+    <table class="table table-sm mb-4">
+      <thead>
+        <tr>
+          <th style="width:38%;">Mecz</th>
+          <th style="width:17%;">Typ</th>
+          <th style="width:18%;">Wynik</th>
+          <th>Data</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div>Jan Kowalski</div>
+            <div>Adam Nowak</div>
+          </td>
+          <td>Singiel</td>
+          <td>6:2 6:1</td>
+          <td>19.07</td>
+        </tr>
+        <tr>
+          <td>
+            <div>MixTeam</div>
+            <div>SuperSerwisy</div>
+          </td>
+          <td>Mikst</td>
+          <td>7:6 4:6 10:8</td>
+          <td>17.07</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 class="h4">Nadchodzące mecze</h2>
+    <table class="table table-sm mb-4">
+      <thead>
+        <tr>
+          <th style="width:38%;">Mecz</th>
+          <th style="width:17%;">Typ</th>
+          <th style="width:18%;">Wynik</th>
+          <th>Data</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div>Jan Kowalski</div>
+            <div>Adam Nowak</div>
+          </td>
+          <td>Singiel</td>
+          <td>6:2 6:1</td>
+          <td>19.07</td>
+        </tr>
+        <tr>
+          <td>
+            <div>MixTeam</div>
+            <div>SuperSerwisy</div>
+          </td>
+          <td>Mikst</td>
+          <td>7:6 4:6 10:8</td>
+          <td>17.07</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 {% endblock %}
